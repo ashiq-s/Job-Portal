@@ -561,7 +561,7 @@ const ApplicationTile = (props) => {
           <Grid item>Role: {application.job.jobType}</Grid>
           <Grid item>Applied On: {appliedOn.toLocaleDateString()}</Grid>
           <Grid item>
-            SOP: {application.sop !== "" ? application.sop : "Not Submitted"}
+            RESUME: {application.sop !== "" ? application.sop : "Not Submitted"}
           </Grid>
           <Grid item>
             {application.jobApplicant.skills.map((skill) => (
@@ -588,7 +588,6 @@ const ApplicationTile = (props) => {
               className={classes.statusBlock}
               style={{
                 marginTop:"230px",
-                marginLeft:"20px",
                 height:"40px",
                 background: "grey",
               }}
@@ -602,7 +601,7 @@ const ApplicationTile = (props) => {
           <Grid item>
             <Button
               variant="contained"
-              style={{backgroundColor:"black", color:"white",marginLeft:"20px",width:"206px"}}
+              style={{backgroundColor:"black", color:"white"}}
               className={classes.statusBlock}
               onClick={() => {
                 setOpen(true);

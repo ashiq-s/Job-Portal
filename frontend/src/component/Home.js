@@ -159,7 +159,7 @@ const JobTile = (props) => {
           }}
         >
           <TextField
-            label="Write SOP (upto 250 words)"
+            label="Open Access Resume Link (Mandatory)"
             multiline
             rows={8}
             style={{ width: "100%", marginBottom: "30px" }}

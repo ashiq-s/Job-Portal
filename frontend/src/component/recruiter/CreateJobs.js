@@ -123,7 +123,7 @@ const CreateJobs = (props) => {
               >
                 <Grid item>
                   <TextField
-                    label="Title"
+                    label="Job Title"
                     value={jobDetails.title}
                     onChange={(event) =>
                       handleInput("title", event.target.value)
@@ -194,7 +194,7 @@ const CreateJobs = (props) => {
                 </Grid>
                 <Grid item>
                   <TextField
-                    label="Salary"
+                    label="Salary (In Rupees, per month)"
                     type="number"
                     variant="outlined"
                     value={jobDetails.salary}

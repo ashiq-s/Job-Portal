@@ -1,4 +1,4 @@
-export const server = "http://localhost:4444";
+export const server = "https://jobscape-backend1.onrender.com";
 
 const apiList = {
   login: `${server}/auth/login`,

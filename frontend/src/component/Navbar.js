@@ -36,7 +36,8 @@ const Navbar = (props) => {
     <AppBar position="fixed">
       <Toolbar style={{fontFamily:"garamond",color:"#0D4008",backgroundColor:"#f7f7f0"}}>
         <Typography variant="h5" styles={{fontFamily:"garamond"}} className={classes.title}>
-          JobScapes
+          <a href="http://localhost:3000/" target="_self" style={{textDecoration:"none",color:"#0D4008" }}>
+          JobScapes</a>
         </Typography>
         {isAuth() ? (
           userType() === "recruiter" ? (

@@ -334,7 +334,7 @@ const Login = (props) => {
   return loggedin ? (
     <Redirect to="/" />
   ) : (
-    <Grid style={{backgroundColor:"#0D4008",width:"100%"}}>
+    <Grid style={{backgroundColor:"#0D4008",width:"100%", height:"100%"}}>
       <Grid item container direction="column" spacing={9} alignItems="center" className={classes.body}>
         <Grid item>
           <Typography style={{fontFamily:"garamond",fontSize:"55px"}}>

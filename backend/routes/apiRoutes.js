@@ -538,7 +538,7 @@ router.post("/jobs/:id/applications", jwtAuth, (req, res) => {
                             recruiterId: job.userId,
                             jobId: job._id,
                             status: "applied",
-                            sop: data.sop,
+                            resume: data.resume,
                           });
                           application
                             .save()
