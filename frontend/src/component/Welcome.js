@@ -2,6 +2,7 @@ import { Grid, Typography } from "@material-ui/core";
 // import { BottomNavigation } from '@mui/material';
 import Untitled from './Untitled.png';
 // import Footer from './footer';
+import { Link } from 'react-router-dom';
 
 
 const Welcome = (props) => {

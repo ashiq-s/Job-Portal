@@ -43,6 +43,10 @@ function App() {
   });
   return (
     <BrowserRouter>
+    {/* <Switch>
+        <Route path="/" exact component={Welcome} />
+        <Route path="/another" component={Navbar} />
+      </Switch> */}
       <SetPopupContext.Provider value={setPopup}>
         <Grid container direction="column">
           <Grid item xs>
@@ -50,9 +54,8 @@ function App() {
           </Grid>
           <Grid item className={classes.body}>
             <Switch>
-              <Route exact path="/">
-                <Welcome />
-              </Route>
+              <Route path="/" exact component={Welcome} />
+              <Route path="/another" component={Navbar} />
               <Route exact path="/login">
                 <Login />
               </Route>

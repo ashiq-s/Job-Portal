@@ -9,6 +9,8 @@ import { useHistory } from "react-router-dom";
 
 import isAuth, { userType } from "../lib/isAuth";
 
+import { Link } from 'react-router-dom';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -32,12 +34,17 @@ const Navbar = (props) => {
     history.push(location);
   };
 
+  const linkStyle = {
+    textDecoration: 'none',
+  };
+
   return (
     <AppBar position="fixed">
       <Toolbar style={{fontFamily:"garamond",color:"#0D4008",backgroundColor:"#f7f7f0"}}>
         <Typography variant="h5" styles={{fontFamily:"garamond"}} className={classes.title}>
-          <a href="http://localhost:3000/" target="_self" style={{textDecoration:"none",color:"#0D4008" }}>
-          JobScapes</a>
+        <Link to="/" style={linkStyle}> 
+          <p style={{textDecoration:"none",color:"#0D4008" }}>JobScapes</p>
+        </Link>
         </Typography>
         {isAuth() ? (
           userType() === "recruiter" ? (
@@ -82,6 +89,12 @@ const Navbar = (props) => {
           )
         ) : (
           <>
+            <Link to="/" style={linkStyle}> 
+            <Button color="#0D4008">
+              <Typography style={{fontFamily:"garamond",color:"#0D4008"}}>HOME</Typography>
+            </Button>
+              {/* <p style={{fontFamily:"garamond",color:"#0D4008", fontSize: "1rem"}}>HOME</p> */}
+            </Link>
             <Button color="#0D4008" onClick={() => handleClick("/login")}>
               <Typography style={{fontFamily:"garamond",color:"#0D4008"}}>Login</Typography>
             </Button>
