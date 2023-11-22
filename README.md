@@ -18,9 +18,8 @@ Review applicant resumes and maintain an updated professional profile.
 
 Applicant Capabilities:
 Applicants can explore available job opportunities with advanced filters and a powerful fuzzy search functionality.
-Submit applications with Statements of Purpose (SOP) to stand out to recruiters.
+Submit applications with Statements of Purpose (SOP) and Resume to stand out to recruiters.
 Monitor the status of their applications and view feedback.
-Personalize their profiles with a profile picture and resume uploads.
 Easily update and maintain their profiles for optimal visibility.
 
 Comprehensive Solution:
@@ -34,9 +33,6 @@ The application adheres to RESTful principles, offering standardized and scalabl
 
 Fuzzy Search Functionality:
 The inclusion of a fuzzy search enhances user experience by accommodating typos and partial search terms.
-
-File Uploads for Enhanced Profiles:
-Applicants can upload both profile pictures and resumes, creating a comprehensive and appealing profile for recruiters.
 
 Responsive Design:
 The web app is designed to be responsive, ensuring a seamless experience across various devices.
